@@ -20,7 +20,7 @@
 html{scroll-behavior:smooth;}
 body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,#c8d5e8 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0;opacity:0.45;}
-
+ 
 /* HEADER */
 header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 2rem;height:62px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 12px rgba(37,99,235,0.07);}
 .logo-wrap{display:flex;align-items:center;gap:.9rem;}
@@ -39,25 +39,25 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .date-badge{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--muted);}
 .back-btn{font-size:.7rem;color:var(--blue);text-decoration:none;font-weight:600;padding:.3rem .8rem;border:1px solid rgba(37,99,235,.25);border-radius:6px;background:var(--blue-l);transition:all .2s;}
 .back-btn:hover{background:var(--blue);color:#fff;}
-
+ 
 /* PAGE BREADCRUMB */
 .breadcrumb{display:flex;align-items:center;gap:.5rem;padding:.75rem 2rem;background:var(--surface);border-bottom:1px solid var(--border);font-size:.65rem;color:var(--muted);position:relative;z-index:1;}
 .bc-item{font-weight:600;}
 .bc-active{color:var(--blue);}
 .bc-sep{color:var(--dim);}
-
+ 
 /* TAB PAGES */
 .page{display:none;position:relative;z-index:1;padding:1.75rem 2rem 3rem;animation:fadeIn .3s ease;}
 .page.active{display:block;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
-
+ 
 /* SECTION HEAD */
 .section-head{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;margin-top:1.75rem;}
 .section-head:first-child{margin-top:0;}
 .section-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
 .section-head h2{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-family:'JetBrains Mono',monospace;}
 .section-line{flex:1;height:1px;background:var(--border);}
-
+ 
 /* PAGE HERO BANNER */
 .page-banner{background:linear-gradient(135deg,var(--blue),var(--purple));border-radius:12px;padding:1.75rem 2rem;margin-bottom:1.5rem;display:flex;justify-content:space-between;align-items:center;color:#fff;}
 .page-banner.green{background:linear-gradient(135deg,var(--green),var(--teal));}
@@ -69,7 +69,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .banner-meta{text-align:right;}
 .banner-stat{font-size:2rem;font-weight:800;}
 .banner-stat-label{font-size:.65rem;opacity:.7;font-family:'JetBrains Mono',monospace;}
-
+ 
 /* KPI CARDS */
 .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
 .kpi-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.4rem 1.5rem;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:0 1px 4px rgba(0,0,0,.05);}
@@ -83,7 +83,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .bdg-up{background:var(--green-l);color:var(--green);}
 .bdg-dn{background:var(--red-l);color:var(--red);}
 .kpi-spark{position:absolute;bottom:0;right:0;width:90px;height:38px;opacity:.18;}
-
+ 
 /* MINI KPI */
 .mini-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;margin-top:1rem;}
 .mini-kpi{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:box-shadow .2s;}
@@ -91,13 +91,13 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .mini-label{font-size:.55rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:.35rem;}
 .mini-val{font-size:1.2rem;font-weight:800;}
 .mini-chg{font-size:.6rem;font-weight:600;margin-top:.2rem;}
-
+ 
 /* CARDS */
 .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;box-shadow:0 1px 4px rgba(0,0,0,.05);transition:box-shadow .2s;}
 .card:hover{box-shadow:0 6px 20px rgba(0,0,0,.08);}
 .card-title{font-size:.82rem;font-weight:700;color:var(--text);margin-bottom:.2rem;}
 .card-sub{font-size:.65rem;color:var(--muted);margin-bottom:1.25rem;}
-
+ 
 /* GRIDS */
 .g31{display:grid;grid-template-columns:3fr 1fr;gap:1.25rem;margin-bottom:1.25rem;}
 .g21{display:grid;grid-template-columns:2fr 1fr;gap:1.25rem;margin-bottom:1.25rem;}
@@ -106,7 +106,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1.25rem;margin-bottom:1.25rem;}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.25rem;}
 .mb0{margin-bottom:0;}
-
+ 
 /* TABLES */
 .tbl{width:100%;border-collapse:collapse;}
 .tbl th{font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;padding:.6rem .75rem;text-align:left;border-bottom:2px solid var(--border);background:var(--surface2);white-space:nowrap;}
@@ -123,7 +123,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .pill-r{background:var(--red-l);color:var(--red);}
 .pill-b{background:var(--blue-l);color:var(--blue);}
 .pill-p{background:var(--purple-l);color:var(--purple);}
-
+ 
 /* FUNNEL */
 .funnel-item{margin-bottom:4px;}
 .funnel-header{display:flex;justify-content:space-between;margin-bottom:4px;}
@@ -132,7 +132,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .funnel-track{height:30px;background:var(--bg2);border-radius:4px;overflow:hidden;}
 .funnel-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:10px;font-weight:700;font-size:.72rem;color:#fff;transition:width 1.4s cubic-bezier(.16,1,.3,1);}
 .funnel-drop{font-size:.58rem;color:var(--red);font-family:'JetBrains Mono',monospace;text-align:right;margin-bottom:2px;margin-top:2px;}
-
+ 
 /* GAUGE */
 .gauge-outer{display:flex;flex-direction:column;align-items:center;}
 .gauge-val{font-size:2.2rem;font-weight:800;margin-top:-1.5rem;color:var(--blue);}
@@ -141,7 +141,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .roas-item{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.75rem;text-align:center;}
 .roas-name{font-size:.55rem;color:var(--muted);font-family:'JetBrains Mono',monospace;letter-spacing:.08em;margin-bottom:.25rem;}
 .roas-val{font-size:1.1rem;font-weight:800;}
-
+ 
 /* 3D BARS */
 .bar3d-item{display:flex;align-items:center;gap:.75rem;margin-bottom:1.1rem;}
 .bar3d-label{font-size:.68rem;font-weight:600;color:var(--text2);width:90px;flex-shrink:0;}
@@ -150,7 +150,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .bar3d-fill::after{content:'';position:absolute;bottom:-5px;left:5px;right:0;height:5px;border-radius:0 0 3px 3px;background:inherit;filter:brightness(.6);clip-path:polygon(0 0,100% 0,calc(100% - 2px) 100%,2px 100%);}
 .bar3d-fill::before{content:'';position:absolute;top:0;right:-5px;width:5px;height:100%;border-radius:0 4px 4px 0;background:inherit;filter:brightness(.75);}
 .bar3d-num{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--muted);width:50px;flex-shrink:0;text-align:right;}
-
+ 
 /* GOAL */
 .goal-item{margin-bottom:1rem;}
 .goal-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px;}
@@ -159,7 +159,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .goal-track{height:8px;background:var(--bg2);border-radius:4px;overflow:hidden;}
 .goal-fill{height:100%;border-radius:4px;transition:width 1.5s cubic-bezier(.16,1,.3,1);}
 .goal-pct{font-family:'JetBrains Mono',monospace;font-size:.6rem;margin-top:3px;text-align:right;}
-
+ 
 /* COMPARE */
 .compare-item{margin-bottom:1.1rem;}
 .compare-header{display:flex;justify-content:space-between;margin-bottom:5px;}
@@ -168,7 +168,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .compare-track{height:10px;background:var(--bg2);border-radius:6px;overflow:hidden;position:relative;}
 .compare-curr{height:100%;border-radius:6px;transition:width 1.3s ease;}
 .compare-prev{position:absolute;top:50%;transform:translateY(-50%);height:3px;background:var(--dim);border-radius:2px;opacity:.6;}
-
+ 
 /* INSIGHT CARDS */
 .insight-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.25rem;display:flex;gap:.9rem;align-items:flex-start;box-shadow:0 1px 4px rgba(0,0,0,.04);transition:box-shadow .2s,transform .2s;}
 .insight-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.08);transform:translateY(-2px);}
@@ -176,35 +176,35 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backd
 .insight-title{font-size:.78rem;font-weight:700;margin-bottom:.3rem;}
 .insight-text{font-size:.67rem;color:var(--muted);line-height:1.6;}
 .insight-metric{font-family:'JetBrains Mono',monospace;font-size:.62rem;font-weight:600;margin-top:.4rem;}
-
+ 
 /* ROI CHIP */
 .roi-chip{padding:.2rem .5rem;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700;}
-
+ 
 /* HEATMAP */
 .hm-label-row{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:5px;}
 .hm-day{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--muted);text-align:center;}
 .heatmap-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;}
 .hm-cell{aspect-ratio:1;border-radius:3px;cursor:pointer;transition:transform .15s,box-shadow .15s;}
 .hm-cell:hover{transform:scale(1.4);z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.15);}
-
+ 
 /* REPORT SUMMARY CARD */
 .summary-stat{text-align:center;padding:1.5rem;background:var(--surface2);border-radius:10px;border:1px solid var(--border);}
 .summary-num{font-size:2rem;font-weight:800;margin-bottom:.25rem;}
 .summary-label{font-size:.65rem;color:var(--muted);font-family:'JetBrains Mono',monospace;letter-spacing:.08em;}
-
+ 
 /* TOOLTIP */
 .tooltip{position:fixed;background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:.4rem .8rem;font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--text);box-shadow:0 4px 16px rgba(0,0,0,.12);pointer-events:none;z-index:9999;display:none;}
-
+ 
 /* FOOTER */
 footer{background:var(--surface);border-top:1px solid var(--border);padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;}
 footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600;}
 .footer-right{font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--muted);}
-
+ 
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
 .kpi-card{animation:fadeUp .4s ease both;}
 .kpi-card:nth-child(1){animation-delay:.05s;}.kpi-card:nth-child(2){animation-delay:.1s;}
 .kpi-card:nth-child(3){animation-delay:.15s;}.kpi-card:nth-child(4){animation-delay:.2s;}
-
+ 
 @media(max-width:1200px){
   .g3,.g4{grid-template-columns:1fr 1fr;}
   .g31,.g21,.g12{grid-template-columns:1fr;}
@@ -221,7 +221,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
 </head>
 <body>
 <div class="tooltip" id="tip"></div>
-
+ 
 <!-- HEADER -->
 <header>
   <div class="logo-wrap">
@@ -241,19 +241,19 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     <a class="back-btn" href="https://abdulhadi1126.github.io">← Portfolio</a>
   </div>
 </header>
-
+ 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
   <span class="bc-item">Marketing KPI</span>
   <span class="bc-sep">›</span>
   <span class="bc-active" id="breadcrumbActive">Overview</span>
 </div>
-
+ 
 <!-- ═══════════════════════════════════════════════ -->
 <!-- PAGE 1: OVERVIEW -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="page active" id="page-overview">
-
+ 
   <div class="page-banner">
     <div>
       <div class="banner-title">Marketing Overview</div>
@@ -264,7 +264,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div class="banner-stat-label">TOTAL REVENUE THIS MONTH</div>
     </div>
   </div>
-
+ 
   <div class="kpi-grid">
     <div class="kpi-card" style="--kc:var(--blue)">
       <div class="kpi-icon" style="background:var(--blue-l)">📊</div>
@@ -291,7 +291,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <svg class="kpi-spark" viewBox="0 0 90 38"><polyline points="0,32 15,25 28,27 42,15 56,18 70,7 90,3" fill="none" stroke="var(--purple)" stroke-width="2.5"/></svg>
     </div>
   </div>
-
+ 
   <div class="mini-grid">
     <div class="mini-kpi"><div class="mini-label">Total Spend</div><div class="mini-val">$48,240</div><div class="mini-chg" style="color:var(--muted)">▲ 8.2%</div></div>
     <div class="mini-kpi"><div class="mini-label">CTR</div><div class="mini-val" style="color:var(--blue)">4.73%</div><div class="mini-chg" style="color:var(--green)">▲ 0.4%</div></div>
@@ -300,7 +300,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     <div class="mini-kpi"><div class="mini-label">Impressions</div><div class="mini-val" style="color:var(--cyan)">14.9M</div><div class="mini-chg" style="color:var(--green)">▲ 11.3%</div></div>
     <div class="mini-kpi"><div class="mini-label">Leads</div><div class="mini-val" style="color:var(--teal)">52,800</div><div class="mini-chg" style="color:var(--green)">▲ 9.6%</div></div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--blue)"></div>
     <h2>Revenue & Spend — 30 Day Trend</h2><div class="section-line"></div>
@@ -327,7 +327,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       </div>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--purple)"></div>
     <h2>Key Insights</h2><div class="section-line"></div>
@@ -338,12 +338,12 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     <div class="insight-card"><div class="insight-icon" style="background:var(--blue-l)">💡</div><div><div class="insight-title">Google CPC Improving</div><div class="insight-text">Google CPC dropped 14% while conversion volume held steady. Quality Score gains.</div><div class="insight-metric" style="color:var(--blue)">$1.42 → $1.22 (▼14%)</div></div></div>
   </div>
 </div>
-
+ 
 <!-- ═══════════════════════════════════════════════ -->
 <!-- PAGE 2: CHANNELS -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="page" id="page-channels">
-
+ 
   <div class="page-banner green">
     <div>
       <div class="banner-title">Channel Performance</div>
@@ -354,7 +354,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div class="banner-stat-label">ACTIVE & TRACKED</div>
     </div>
   </div>
-
+ 
   <div class="section-head" style="margin-top:0">
     <div class="section-dot" style="background:var(--green)"></div>
     <h2>Channel Performance Table</h2><div class="section-line"></div>
@@ -372,7 +372,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div id="donutLegend" style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem;"></div>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--orange)"></div>
     <h2>Channel Visuals</h2><div class="section-line"></div>
@@ -394,7 +394,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <canvas id="radarChart" height="155"></canvas>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--blue)"></div>
     <h2>3D Channel Comparison & Efficiency</h2><div class="section-line"></div>
@@ -412,12 +412,12 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     </div>
   </div>
 </div>
-
+ 
 <!-- ═══════════════════════════════════════════════ -->
 <!-- PAGE 3: CAMPAIGNS -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="page" id="page-campaigns">
-
+ 
   <div class="page-banner orange">
     <div>
       <div class="banner-title">Campaign Analytics</div>
@@ -428,14 +428,14 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div class="banner-stat-label">CAMPAIGNS RUNNING</div>
     </div>
   </div>
-
+ 
   <div class="g4">
     <div class="summary-stat"><div class="summary-num" style="color:var(--blue)">$48.2K</div><div class="summary-label">TOTAL SPEND</div></div>
     <div class="summary-stat"><div class="summary-num" style="color:var(--green)">$203.9K</div><div class="summary-label">TOTAL REVENUE</div></div>
     <div class="summary-stat"><div class="summary-num" style="color:var(--orange)">323%</div><div class="summary-label">AVG ROI</div></div>
     <div class="summary-stat"><div class="summary-num" style="color:var(--purple)">10,690</div><div class="summary-label">TOTAL CONV.</div></div>
   </div>
-
+ 
   <div class="section-head" style="margin-top:.5rem">
     <div class="section-dot" style="background:var(--orange)"></div>
     <h2>Top Performing Campaigns</h2><div class="section-line"></div>
@@ -445,7 +445,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     <div class="card-sub">Current month performance across all channels</div>
     <table class="tbl"><thead><tr><th>#</th><th>Campaign</th><th>Channel</th><th>Spend</th><th>Revenue</th><th>ROI</th><th>Conversions</th><th>Conv. Rate</th><th>Status</th></tr></thead><tbody id="campTableBody"></tbody></table>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--cyan)"></div>
     <h2>Spend vs Revenue Analysis</h2><div class="section-line"></div>
@@ -463,12 +463,12 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     </div>
   </div>
 </div>
-
+ 
 <!-- ═══════════════════════════════════════════════ -->
 <!-- PAGE 4: FUNNEL -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="page" id="page-funnel">
-
+ 
   <div class="page-banner purple">
     <div>
       <div class="banner-title">Conversion Funnel</div>
@@ -479,7 +479,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div class="banner-stat-label">END-TO-END CONV. RATE</div>
     </div>
   </div>
-
+ 
   <div class="section-head" style="margin-top:0">
     <div class="section-dot" style="background:var(--purple)"></div>
     <h2>Full Conversion Funnel</h2><div class="section-line"></div>
@@ -496,7 +496,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:.5rem;" id="funnelKpis"></div>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--pink)"></div>
     <h2>Funnel Trend Analysis</h2><div class="section-line"></div>
@@ -518,7 +518,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <canvas id="leadArea" height="140"></canvas>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--cyan)"></div>
     <h2>This Month vs Last Month</h2><div class="section-line"></div>
@@ -529,12 +529,12 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     <canvas id="funnelBarChart" height="90"></canvas>
   </div>
 </div>
-
+ 
 <!-- ═══════════════════════════════════════════════ -->
 <!-- PAGE 5: REPORTS -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="page" id="page-reports">
-
+ 
   <div class="page-banner teal">
     <div>
       <div class="banner-title">Reports & Analytics</div>
@@ -545,7 +545,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div class="banner-stat-label">REPORTING PERIOD</div>
     </div>
   </div>
-
+ 
   <div class="section-head" style="margin-top:0">
     <div class="section-dot" style="background:var(--teal)"></div>
     <h2>Goal Progress & MoM Comparison</h2><div class="section-line"></div>
@@ -562,7 +562,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       <div id="compareWrap" style="margin-top:.5rem;"></div>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--blue)"></div>
     <h2>6-Month Revenue Trajectory</h2><div class="section-line"></div>
@@ -585,7 +585,7 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
       </div>
     </div>
   </div>
-
+ 
   <div class="section-head">
     <div class="section-dot" style="background:var(--purple)"></div>
     <h2>Report Summary</h2><div class="section-line"></div>
@@ -597,25 +597,25 @@ footer a{color:var(--blue);text-decoration:none;font-size:.72rem;font-weight:600
     <div class="summary-stat"><div class="summary-num" style="color:var(--purple)">22,360</div><div class="summary-label">CONVERSIONS</div></div>
   </div>
 </div>
-
+ 
 <footer>
   <a href="https://abdulhadi1126.github.io">← Back to Portfolio</a>
   <div class="footer-right">MARKETING KPI TRACKER · DESIGNED BY ABDUL HADI · DATA ANALYST & DASHBOARD DESIGNER</div>
 </footer>
-
+ 
 <script>
 // ── Globals ───────────────────────────────────────────────────
 Chart.defaults.color='#7a90a8';
 Chart.defaults.borderColor='#dde5ef';
 Chart.defaults.font.family="'Plus Jakarta Sans',sans-serif";
 Chart.defaults.font.size=10;
-
+ 
 const tip=document.getElementById('tip');
 document.getElementById('dateBadge').textContent=new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}).toUpperCase();
 const C={blue:'#2563eb',green:'#059669',orange:'#ea580c',pink:'#db2777',purple:'#7c3aed',yellow:'#d97706',cyan:'#0891b2',teal:'#0d9488',red:'#dc2626'};
 const TP={backgroundColor:'#fff',borderColor:'#dde5ef',borderWidth:1,titleColor:'#1a2535',bodyColor:'#7a90a8'};
 const NAMES={overview:'Overview',channels:'Channels',campaigns:'Campaigns',funnel:'Funnel',reports:'Reports'};
-
+ 
 // ── Tab navigation ────────────────────────────────────────────
 function showPage(id, el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -625,7 +625,7 @@ function showPage(id, el){
   document.getElementById('breadcrumbActive').textContent=NAMES[id];
   window.scrollTo({top:0,behavior:'smooth'});
 }
-
+ 
 // ── OVERVIEW: Trend Chart ─────────────────────────────────────
 const d30=Array.from({length:30},(_,i)=>{const d=new Date();d.setDate(d.getDate()-29+i);return d.toLocaleDateString('en-US',{month:'short',day:'numeric'});});
 const rev=d30.map((_,i)=>7800+Math.random()*3800+i*130+Math.sin(i/3)*1400);
@@ -635,11 +635,11 @@ new Chart('trendChart',{type:'bar',data:{labels:d30,datasets:[
   {label:'Spend',data:spd,backgroundColor:'rgba(234,88,12,.1)',borderColor:C.orange,borderWidth:1.5,borderRadius:3,yAxisID:'y'},
   {label:'ROAS',data:rev.map((v,i)=>+(v/spd[i]).toFixed(2)),type:'line',borderColor:C.green,backgroundColor:'rgba(5,150,105,.05)',fill:true,borderWidth:2,pointRadius:0,tension:.4,yAxisID:'y1'}
 ]},options:{responsive:true,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:'#7a90a8',boxWidth:10,usePointStyle:true}},tooltip:TP},scales:{x:{grid:{display:false},ticks:{maxTicksLimit:8,maxRotation:0}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>'$'+(v/1000).toFixed(0)+'k'}},y1:{position:'right',grid:{display:false},ticks:{color:C.green,callback:v=>v+'x'}}}}});
-
+ 
 // ── OVERVIEW: Gauge ───────────────────────────────────────────
 const gc=document.getElementById('gaugeChart').getContext('2d');
 (function(){const cx=95,cy=100,r=72,sA=Math.PI,eA=2*Math.PI,vA=sA+(6.22/10)*(eA-sA);gc.clearRect(0,0,190,115);gc.beginPath();gc.arc(cx,cy,r,sA,eA);gc.strokeStyle='#e8eef5';gc.lineWidth=16;gc.stroke();const gr=gc.createLinearGradient(20,cy,170,cy);gr.addColorStop(0,'#3b82f6');gr.addColorStop(1,'#059669');gc.beginPath();gc.arc(cx,cy,r,sA,vA);gc.strokeStyle=gr;gc.lineWidth=16;gc.lineCap='round';gc.stroke();const tA=sA+(5/10)*(eA-sA);gc.beginPath();gc.moveTo(cx+Math.cos(tA)*(r-12),cy+Math.sin(tA)*(r-12));gc.lineTo(cx+Math.cos(tA)*(r+4),cy+Math.sin(tA)*(r+4));gc.strokeStyle=C.yellow;gc.lineWidth=2.5;gc.stroke();gc.fillStyle='#7a90a8';gc.font='9px JetBrains Mono';gc.fillText('0x',20,cy+20);gc.fillText('10x',155,cy+20);gc.fillStyle=C.yellow;gc.fillText('TARGET',cx-18,cy-18);})();
-
+ 
 // ── CHANNELS: Table ───────────────────────────────────────────
 const chs=[
   {n:'Google Ads',c:C.blue,  im:'4.2M',cl:'198K',ctr:'4.71%',cv:'8,420',cpc:'$1.22',ro:'7.4x',sh:42,pill:'pill-g',st:'STRONG'},
@@ -649,13 +649,13 @@ const chs=[
 ];
 const ctb=document.getElementById('chTableBody');
 chs.forEach(c=>{ctb.innerHTML+=`<tr><td><div class="ch-badge"><div class="ch-dot" style="background:${c.c}"></div>${c.n}</div></td><td style="font-family:'JetBrains Mono',monospace">${c.im}</td><td style="font-family:'JetBrains Mono',monospace">${c.cl}</td><td style="font-family:'JetBrains Mono',monospace;color:${c.c};font-weight:600">${c.ctr}</td><td style="font-family:'JetBrains Mono',monospace">${c.cv}</td><td style="font-family:'JetBrains Mono',monospace">${c.cpc}</td><td style="font-family:'JetBrains Mono',monospace;font-weight:700;color:${c.c}">${c.ro}</td><td style="min-width:110px"><div style="display:flex;align-items:center;gap:5px"><div class="bar-track" style="flex:1"><div class="bar-fill" style="width:${c.sh}%;background:${c.c}"></div></div><span style="font-family:'JetBrains Mono',monospace;font-size:.6rem;color:${c.c};min-width:24px">${c.sh}%</span></div></td><td><span class="pill ${c.pill}">${c.st}</span></td></tr>`;});
-
+ 
 // ── CHANNELS: Donut ───────────────────────────────────────────
 const chN=['Google Ads','Facebook','Instagram','Email/CRM'],chV=[42,28,16,14],chC=[C.blue,C.green,C.pink,C.orange];
 new Chart('donutChart',{type:'doughnut',data:{labels:chN,datasets:[{data:chV,backgroundColor:chC.map(c=>c+'22'),borderColor:chC,borderWidth:2.5,hoverOffset:10}]},options:{cutout:'60%',plugins:{legend:{display:false},tooltip:{...TP,callbacks:{label:ctx=>` ${ctx.label}: ${ctx.parsed}%`}}}}});
 const dl=document.getElementById('donutLegend');
 chN.forEach((n,i)=>{dl.innerHTML+=`<div style="display:flex;align-items:center;gap:5px;font-size:.62rem;color:var(--muted)"><div style="width:10px;height:10px;border-radius:2px;background:${chC[i]}"></div>${n} ${chV[i]}%</div>`;});
-
+ 
 // ── CHANNELS: CPC ─────────────────────────────────────────────
 const wks=['W1','W2','W3','W4','W5','W6','W7','W8','W9','W10','W11','W12'];
 new Chart('cpcChart',{type:'line',data:{labels:wks,datasets:[
@@ -663,7 +663,7 @@ new Chart('cpcChart',{type:'line',data:{labels:wks,datasets:[
   {label:'Facebook',data:[2.10,2.05,2.08,2.02,1.98,1.95,1.92,1.96,1.94,1.95,1.93,1.94],borderColor:C.green,backgroundColor:'rgba(5,150,105,.07)',fill:true,borderWidth:2,pointRadius:3,tension:.4},
   {label:'Instagram',data:[2.80,2.75,2.68,2.72,2.65,2.60,2.58,2.62,2.55,2.50,2.48,2.48],borderColor:C.pink,backgroundColor:'rgba(219,39,119,.07)',fill:true,borderWidth:2,pointRadius:3,tension:.4},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:8,usePointStyle:true}},tooltip:TP},scales:{x:{grid:{display:false}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>'$'+v.toFixed(2)}}}}});
-
+ 
 // ── CHANNELS: Stacked ─────────────────────────────────────────
 new Chart('stackedChart',{type:'bar',data:{labels:['W1','W2','W3','W4','W5','W6','W7','W8'],datasets:[
   {label:'Google',data:[28,32,30,35,38,34,40,42],backgroundColor:C.blue+'cc',borderRadius:2},
@@ -671,18 +671,18 @@ new Chart('stackedChart',{type:'bar',data:{labels:['W1','W2','W3','W4','W5','W6'
   {label:'Instagram',data:[10,11,9,12,11,10,13,12],backgroundColor:C.pink+'cc',borderRadius:2},
   {label:'Email',data:[8,9,10,9,11,12,13,14],backgroundColor:C.orange+'cc',borderRadius:2},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:8,usePointStyle:true}},tooltip:TP},scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,grid:{color:'#f0f4f8'},ticks:{callback:v=>'$'+v+'k'}}}}});
-
+ 
 // ── CHANNELS: Radar ───────────────────────────────────────────
 new Chart('radarChart',{type:'radar',data:{labels:['CTR','Conv Rate','ROAS','Imp. Share','Quality Score','ROI'],datasets:[
   {label:'Actual',data:[85,76,92,68,80,88],borderColor:C.blue,backgroundColor:'rgba(37,99,235,.12)',borderWidth:2,pointBackgroundColor:C.blue},
   {label:'Benchmark',data:[60,60,60,60,60,60],borderColor:'#b0c0d0',backgroundColor:'rgba(176,192,208,.08)',borderWidth:1.5,borderDash:[4,4],pointBackgroundColor:'#b0c0d0'},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:8,usePointStyle:true}},tooltip:TP},scales:{r:{grid:{color:'#e8eef5'},pointLabels:{color:'#7a90a8',font:{size:9}},ticks:{display:false}}}}});
-
+ 
 // ── CHANNELS: 3D bars ─────────────────────────────────────────
 const b3d=[{label:'Google Ads',val:128400,c:C.blue},{label:'Facebook',val:84700,c:C.green},{label:'Email/CRM',val:39600,c:C.orange},{label:'Instagram',val:47200,c:C.pink}];
 const b3el=document.getElementById('bars3d');
 b3d.forEach(b=>{const p=(b.val/128400*100).toFixed(0);b3el.innerHTML+=`<div class="bar3d-item"><div class="bar3d-label">${b.label}</div><div class="bar3d-track"><div class="bar3d-fill" style="width:${p}%;background:${b.c}"><span style="font-size:.65rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:#fff">${p}%</span></div></div><div class="bar3d-num">$${(b.val/1000).toFixed(0)}K</div></div>`;});
-
+ 
 // ── CHANNELS: Bubble ──────────────────────────────────────────
 new Chart('bubbleChart',{type:'bubble',data:{datasets:[
   {label:'Google Ads',data:[{x:4.71,y:7.4,r:22}],backgroundColor:C.blue+'88',borderColor:C.blue,borderWidth:2},
@@ -690,7 +690,7 @@ new Chart('bubbleChart',{type:'bubble',data:{datasets:[
   {label:'Instagram',data:[{x:2.87,y:4.9,r:12}],backgroundColor:C.pink+'88',borderColor:C.pink,borderWidth:2},
   {label:'Email/CRM',data:[{x:11.7,y:9.2,r:8}],backgroundColor:C.orange+'88',borderColor:C.orange,borderWidth:2},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:8,usePointStyle:true}},tooltip:{...TP,callbacks:{label:ctx=>`CTR:${ctx.parsed.x}% | ROAS:${ctx.parsed.y}x`}}},scales:{x:{grid:{color:'#f0f4f8'},title:{display:true,text:'CTR (%)',color:'#7a90a8',font:{size:10}}},y:{grid:{color:'#f0f4f8'},title:{display:true,text:'ROAS (x)',color:'#7a90a8',font:{size:10}},ticks:{callback:v=>v+'x'}}}}});
-
+ 
 // ── CAMPAIGNS: Table ──────────────────────────────────────────
 const camps=[
   {r:'01',n:'Email Re-engagement',ch:'Email/CRM',sp:'$1,200',rv:'$18,400',roi:'1,433%',cv:'1,640',cr:'4.2%',pill:'pill-g',st:'ACTIVE',rc:C.green},
@@ -702,7 +702,7 @@ const camps=[
 ];
 const campb=document.getElementById('campTableBody');
 camps.forEach(c=>{campb.innerHTML+=`<tr><td style="font-weight:800;color:var(--dim);font-family:'JetBrains Mono',monospace">${c.r}</td><td style="font-weight:600">${c.n}</td><td><span class="pill pill-b">${c.ch}</span></td><td style="font-family:'JetBrains Mono',monospace;font-size:.72rem">${c.sp}</td><td style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:${C.blue};font-weight:600">${c.rv}</td><td><span class="roi-chip" style="color:${c.rc};background:${c.rc}15;border:1px solid ${c.rc}30">${c.roi}</span></td><td style="font-family:'JetBrains Mono',monospace;font-size:.72rem">${c.cv}</td><td style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:${C.green}">${c.cr}</td><td><span class="pill ${c.pill}">${c.st}</span></td></tr>`;});
-
+ 
 // ── CAMPAIGNS: Scatter ────────────────────────────────────────
 new Chart('scatterChart',{type:'scatter',data:{datasets:[
   {label:'Google',data:Array.from({length:12},()=>({x:+(Math.random()*12000+2000).toFixed(0),y:+(Math.random()*80000+15000).toFixed(0)})),backgroundColor:C.blue+'99',pointRadius:6},
@@ -710,45 +710,45 @@ new Chart('scatterChart',{type:'scatter',data:{datasets:[
   {label:'Instagram',data:Array.from({length:8},()=>({x:+(Math.random()*5000+1000).toFixed(0),y:+(Math.random()*40000+5000).toFixed(0)})),backgroundColor:C.pink+'99',pointRadius:6},
   {label:'Email',data:Array.from({length:6},()=>({x:+(Math.random()*2000+200).toFixed(0),y:+(Math.random()*50000+10000).toFixed(0)})),backgroundColor:C.orange+'99',pointRadius:6},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:8,usePointStyle:true}},tooltip:{...TP,callbacks:{label:ctx=>`Spend:$${ctx.parsed.x} | Rev:$${ctx.parsed.y}`}}},scales:{x:{grid:{color:'#f0f4f8'},title:{display:true,text:'Ad Spend ($)',color:'#7a90a8',font:{size:10}},ticks:{callback:v=>'$'+v.toLocaleString()}},y:{grid:{color:'#f0f4f8'},title:{display:true,text:'Revenue ($)',color:'#7a90a8',font:{size:10}},ticks:{callback:v=>'$'+(v/1000).toFixed(0)+'k'}}}}});
-
+ 
 // ── CAMPAIGNS: ROI bar ────────────────────────────────────────
 new Chart('roiBarChart',{type:'bar',data:{
   labels:['Email Re-eng.','Google Brand','FB Retarget','Google Shop','IG Stories','FB Prospect'],
   datasets:[{label:'ROI %',data:[1433,640,497,359,300,242],backgroundColor:[C.green,C.blue,C.green,C.blue,C.yellow,C.orange].map(c=>c+'cc'),borderRadius:4}]
 },options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false},tooltip:{...TP,callbacks:{label:ctx=>` ROI: ${ctx.parsed.x}%`}}},scales:{x:{grid:{color:'#f0f4f8'},ticks:{callback:v=>v+'%'}},y:{grid:{display:false}}}}});
-
+ 
 // ── FUNNEL: Funnel bars ───────────────────────────────────────
 const fS=[{n:'Impressions',v:14900000,p:100,c:C.blue},{n:'Reach',v:8200000,p:55,c:C.cyan},{n:'Clicks',v:628000,p:4.2,c:C.green},{n:'Landing Page',v:441000,p:2.96,c:C.yellow},{n:'Leads',v:52800,p:.35,c:C.orange},{n:'Customers',v:22360,p:.15,c:C.pink}];
 const fw=document.getElementById('funnelWrap');
 fS.forEach((s,i)=>{const fmt=v=>v>=1e6?(v/1e6).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'K':v;const drop=i>0?`<div class="funnel-drop">▼ ${(100-s.p/fS[i-1].p*100).toFixed(0)}% drop-off</div>`:'';fw.innerHTML+=`${drop}<div class="funnel-item"><div class="funnel-header"><span class="funnel-name">${s.n}</span><span class="funnel-val">${fmt(s.v)} · ${s.p}%</span></div><div class="funnel-track"><div class="funnel-fill" style="width:${s.p}%;background:${s.c}">${fmt(s.v)}</div></div></div>`;});
-
+ 
 // ── FUNNEL: Stage KPIs ────────────────────────────────────────
 const fkpis=document.getElementById('funnelKpis');
 const fkdata=[{label:'Impression → Reach Rate',val:'55.0%',c:C.blue},{label:'Reach → Click Rate (CTR)',val:'7.7%',c:C.cyan},{label:'Click → Landing Rate',val:'70.2%',c:C.green},{label:'Landing → Lead Rate',val:'11.9%',c:C.orange},{label:'Lead → Customer Rate',val:'42.3%',c:C.pink},{label:'End-to-End Conv. Rate',val:'0.15%',c:C.purple}];
 fkdata.forEach(f=>{fkpis.innerHTML+=`<div style="display:flex;justify-content:space-between;align-items:center;padding:.6rem .75rem;background:var(--surface2);border-radius:6px;border:1px solid var(--border)"><span style="font-size:.7rem;font-weight:600;color:var(--text2)">${f.label}</span><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:700;color:${f.c}">${f.val}</span></div>`;});
-
+ 
 // ── FUNNEL: Area charts ───────────────────────────────────────
 const m6=['Dec','Jan','Feb','Mar','Apr','May'];
 new Chart('ctrArea',{type:'line',data:{labels:m6,datasets:[{label:'CTR %',data:[3.8,4.0,4.1,4.3,4.5,4.73],borderColor:C.blue,backgroundColor:'rgba(37,99,235,.1)',fill:true,borderWidth:2.5,pointRadius:4,pointBackgroundColor:C.blue,tension:.4}]},options:{responsive:true,plugins:{legend:{display:false},tooltip:TP},scales:{x:{grid:{display:false}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>v+'%'}}}}});
 new Chart('convArea',{type:'line',data:{labels:m6,datasets:[{label:'Conv. Rate',data:[3.1,3.2,3.4,3.5,3.7,3.84],borderColor:C.green,backgroundColor:'rgba(5,150,105,.1)',fill:true,borderWidth:2.5,pointRadius:4,pointBackgroundColor:C.green,tension:.4}]},options:{responsive:true,plugins:{legend:{display:false},tooltip:TP},scales:{x:{grid:{display:false}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>v+'%'}}}}});
 new Chart('leadArea',{type:'line',data:{labels:m6,datasets:[{label:'Leads',data:[32000,36000,40000,44000,49000,52800],borderColor:C.purple,backgroundColor:'rgba(124,58,237,.1)',fill:true,borderWidth:2.5,pointRadius:4,pointBackgroundColor:C.purple,tension:.4}]},options:{responsive:true,plugins:{legend:{display:false},tooltip:TP},scales:{x:{grid:{display:false}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>(v/1000).toFixed(0)+'K'}}}}});
-
+ 
 // ── FUNNEL: Comparison bar ────────────────────────────────────
 new Chart('funnelBarChart',{type:'bar',data:{labels:['Impressions','Reach','Clicks','Leads','Customers'],datasets:[
   {label:'This Month',data:[14.9,8.2,.628,.0528,.02236],backgroundColor:C.blue+'99',borderRadius:3},
   {label:'Last Month',data:[13.4,7.1,.550,.0448,.0185],backgroundColor:C.purple+'99',borderRadius:3},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:8,usePointStyle:true}},tooltip:TP},scales:{x:{grid:{display:false}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>v+'M'}}}}});
-
+ 
 // ── REPORTS: Goals ────────────────────────────────────────────
 const goals=[{n:'Revenue Target',curr:299900,tgt:350000,c:C.blue},{n:'ROAS Target',curr:6.22,tgt:5.0,c:C.green},{n:'Lead Generation',curr:52800,tgt:60000,c:C.purple},{n:'CPC Reduction',curr:1.84,tgt:1.70,c:C.orange},{n:'Email CTR',curr:11.7,tgt:12.0,c:C.cyan},{n:'Conversions',curr:22360,tgt:25000,c:C.pink}];
 const gw=document.getElementById('goalsWrap');
 goals.forEach(g=>{const p=Math.min(Math.round(g.curr/g.tgt*100),120);const ov=p>=100;const fmt=v=>v>1000?'$'+(v/1000).toFixed(0)+'K':v;gw.innerHTML+=`<div class="goal-item"><div class="goal-header"><div class="goal-name">${g.n}</div><div class="goal-nums">${fmt(g.curr)} / ${fmt(g.tgt)}</div></div><div class="goal-track"><div class="goal-fill" style="width:${Math.min(p,100)}%;background:${g.c}"></div></div><div class="goal-pct" style="color:${ov?C.green:g.c}">${p}% ${ov?'✓ EXCEEDED':''}</div></div>`;});
-
+ 
 // ── REPORTS: Compare ──────────────────────────────────────────
 const comps=[{n:'Revenue',curr:299900,prev:244900,c:C.blue,fmt:'$'},{n:'ROAS',curr:6.22,prev:5.42,c:C.green,fmt:''},{n:'Conversions',curr:22360,prev:18830,c:C.purple,fmt:''},{n:'CTR',curr:4.73,prev:4.33,c:C.cyan,fmt:''},{n:'CPC',curr:1.84,prev:2.05,c:C.orange,fmt:'$'}];
 const cw=document.getElementById('compareWrap');
 comps.forEach(c=>{const max=Math.max(c.curr,c.prev);const cp=c.curr/max*100,pp=c.prev/max*100;const up=c.n==='CPC'?c.curr<c.prev:c.curr>c.prev;const fmt=v=>c.fmt==='$'?'$'+(v>1000?(v/1000).toFixed(0)+'K':v.toFixed(2)):v;cw.innerHTML+=`<div class="compare-item"><div class="compare-header"><span class="compare-name">${c.n}</span><span class="compare-vals">${fmt(c.curr)} vs ${fmt(c.prev)} <span style="color:${up?C.green:C.red};font-weight:600">${up?'▲':'▼'}</span></span></div><div class="compare-track"><div class="compare-curr" style="width:${cp}%;background:${c.c}"></div><div class="compare-prev" style="width:${pp}%"></div></div></div>`;});
-
+ 
 // ── REPORTS: Line chart ───────────────────────────────────────
 new Chart('lineChart',{type:'line',data:{labels:['Jan','Feb','Mar','Apr','May','Jun'],datasets:[
   {label:'Google',data:[98,108,115,122,128,134],borderColor:C.blue,borderWidth:2,pointRadius:3,tension:.4,backgroundColor:'transparent'},
@@ -756,7 +756,7 @@ new Chart('lineChart',{type:'line',data:{labels:['Jan','Feb','Mar','Apr','May','
   {label:'Email',data:[22,26,28,33,37,42],borderColor:C.orange,borderWidth:2,pointRadius:3,tension:.4,backgroundColor:'transparent'},
   {label:'Instagram',data:[54,52,50,49,48,47],borderColor:C.pink,borderWidth:2,pointRadius:3,tension:.4,backgroundColor:'transparent'},
 ]},options:{responsive:true,plugins:{legend:{labels:{color:'#7a90a8',boxWidth:6,usePointStyle:true,font:{size:9}}},tooltip:TP},scales:{x:{grid:{display:false}},y:{grid:{color:'#f0f4f8'},ticks:{callback:v=>'$'+v+'k'}}}}});
-
+ 
 // ── REPORTS: Heatmap ──────────────────────────────────────────
 const hg=document.getElementById('heatGrid');
 const blues=['#dbeafe','#93c5fd','#3b82f6','#1d4ed8','#1e3a8a'];
@@ -764,3 +764,4 @@ for(let w=0;w<12;w++){for(let d=0;d<7;d++){const b=(d===4?.25:d>=5?-.15:0);const
 </script>
 </body>
 </html>
+ 
